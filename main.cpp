@@ -1,8 +1,10 @@
 // Polis City Simulator
 
 /*--- includes ---*/
-#include "raylib.h"
+#include <raylib.h>
 #include "raymath.h"
+#include "quadtree.h"
+#include "gameobject.h"
 
 /*--- defines ---*/
 
