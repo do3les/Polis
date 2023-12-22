@@ -3,6 +3,7 @@
 #include <vector>
 #include <raylib.h>
 
+
 #define QT_NODE_CAPACITY 3
 
 //Forward declarations to avoid circular dependency
@@ -22,14 +23,17 @@ public:
      * SW | SE
      */
     QuadTree* northWest;
-    QuadTree* nortEast;
+    QuadTree* northEast;
     QuadTree* southEast;
     QuadTree* southWest;
 
     //ToDo: Decide if we need a pointer pointing back to the parent node.
 
     //Constructor
-    QuadTree();
+    QuadTree(Rectangle Area);
+
+
+    void draw_regions(); //Recursively draw any regions in this QT
 
 
     void subdivide(); //Generate four child nodes under this QuadTree
@@ -42,3 +46,5 @@ public:
     bool contains_region(GameRegion* target); //Check recursively for a target region
 
 };
+
+#include "quadtree.cpp"

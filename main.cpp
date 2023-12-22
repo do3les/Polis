@@ -4,9 +4,10 @@
 #include <vector>
 #include <raylib.h>
 #include "raymath.h"
-#include "quadtree.h"
+
 #include "gameobject.h"
 #include "gameregion.h"
+#include "quadtree.h"
 
 /*--- defines ---*/
 
@@ -16,7 +17,6 @@ const int windowWidth = 1000;
 const int windowHeight = 1000;
 const Vector2 windowCenter = {windowWidth / 2.0f, windowHeight / 2.0f};
 
-QuadTree worldTree;
 
 
 /*--- main ---*/
@@ -27,6 +27,13 @@ int main(void){
     /*--- init ---*/
     InitWindow(windowWidth, windowHeight, "Polis - City Simulator");
 
+    Rectangle test = {0, 0, 500, 500};
+    Building testBuilding;
+
+    QuadTree testTree(test);
+
+    testTree.subdivide();
+    testTree.southWest->region = &testBuilding;
 
     /*--- game loop ---*/
     while(!WindowShouldClose()){
@@ -37,6 +44,7 @@ int main(void){
         BeginDrawing();
 
             ClearBackground(RAYWHITE);
+            testTree.draw_regions();
 
         EndDrawing();
 

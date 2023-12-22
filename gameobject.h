@@ -9,8 +9,6 @@ class GameObject{
 public:
     Vector2 position;
 
-    QuadTree treeParent;
-
     virtual int process() =0;
 
     virtual void draw() =0;

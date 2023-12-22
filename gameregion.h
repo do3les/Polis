@@ -8,15 +8,11 @@ class GameObject;
 
 class GameRegion {
 public:
-    Rectangle area;
-
-    QuadTree treeParent;
-
     Color color;
 
     GameObject* object;
 
-    virtual void draw() =0;
+    virtual void draw(Rectangle area) =0;
 };
 
 
@@ -24,5 +20,11 @@ public:
 /*-------------------------------- building classes --------------------------------*/
 
 class Building : public GameRegion {
+public:
+    Building();
 
+    void draw(Rectangle area) override;
 };
+
+
+#include "gameregion.cpp"
