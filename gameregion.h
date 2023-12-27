@@ -7,7 +7,7 @@ class QuadTree;
 class GameObject;
 
 #ifndef GameRegion_H
-#define
+#define GameRegion_H
 class GameRegion {
 public:
     Color color;
