@@ -1,8 +1,6 @@
-#pragma once
-
 #include <raylib.h>
 #include "raymath.h"
-
+#include "gameregion.h"
 
 
 Building::Building(){

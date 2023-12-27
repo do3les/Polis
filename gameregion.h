@@ -6,15 +6,17 @@
 class QuadTree;
 class GameObject;
 
+#ifndef GameRegion_H
+#define
 class GameRegion {
 public:
     Color color;
 
     GameObject* object;
 
-    virtual void draw(Rectangle area) =0;
+    virtual void draw(Rectangle area) = 0;
 };
-
+#endif // !GameRegion_H
 
 
 /*-------------------------------- building classes --------------------------------*/

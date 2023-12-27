@@ -4,12 +4,12 @@
 #include <raylib.h>
 
 
-#define QT_NODE_CAPACITY 3
-
 //Forward declarations to avoid circular dependency
 class GameObject;
 class GameRegion;
 
+#ifndef QuadTree_H
+#define QuadTree_H
 class QuadTree {
 public:
     Rectangle area;
@@ -46,5 +46,4 @@ public:
     bool contains_region(GameRegion* target); //Check recursively for a target region
 
 };
-
-#include "quadtree.cpp"
+#endif // !QuadTree_H

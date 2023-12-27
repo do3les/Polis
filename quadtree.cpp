@@ -1,7 +1,6 @@
-#pragma once
-
 #include <raylib.h>
 #include "raymath.h"
+#include "quadtree.h"
 
 
 QuadTree::QuadTree(Rectangle Area) {
@@ -37,6 +36,6 @@ void QuadTree::draw_regions() {
         southWest->draw_regions();
     }
     if(region != nullptr){
-        region->draw(area);
+        //region->draw(area);
     }
 }

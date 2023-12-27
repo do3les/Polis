@@ -5,16 +5,18 @@
 //Forward declarations to avoid circular dependency
 class QuadTree;
 
-class GameObject{
+#ifndef GameObject_H
+#define GameObject_H
+class GameObject {
 public:
     Vector2 position;
 
-    virtual int process() =0;
+    virtual int process() = 0;
 
-    virtual void draw() =0;
+    virtual void draw() = 0;
 
 };
-
+#endif // !GameObject_H
 
 
 /*-------------------------------- creature classes --------------------------------*/
