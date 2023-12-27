@@ -21,12 +21,12 @@ public:
 
 /*-------------------------------- building classes --------------------------------*/
 
+#ifndef Building_H
+#define Building_H
 class Building : public GameRegion {
 public:
     Building();
 
     void draw(Rectangle area) override;
 };
-
-
-#include "gameregion.cpp"
+#endif // !Building_H

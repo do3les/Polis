@@ -13,7 +13,7 @@ class GameRegion;
 class QuadTree {
 public:
     Rectangle area;
-    GameObject* objects[QT_NODE_CAPACITY];
+    //GameObject* objects[QT_NODE_CAPACITY];
     GameRegion* region;
 
 
