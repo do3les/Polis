@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq57p6cvvemdm"
-path="res://.godot/imported/4_Seasons_Ground_Tiles.png-a0b1a24856f606cfbad8ae977f239a44.ctex"
+uid="uid://cbghab4o2pnxe"
+path="res://.godot/imported/buildings.png-93e0954f6f5c1ad433b73f9ff2e9fc87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/16x16 TopDown Nature/4_Seasons_Ground_Tiles.png"
-dest_files=["res://.godot/imported/4_Seasons_Ground_Tiles.png-a0b1a24856f606cfbad8ae977f239a44.ctex"]
+source_file="res://assets/buildings.png"
+dest_files=["res://.godot/imported/buildings.png-93e0954f6f5c1ad433b73f9ff2e9fc87.ctex"]
 
 [params]
 

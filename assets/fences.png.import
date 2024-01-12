@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn4jtxsbkbtud"
-path="res://.godot/imported/4_Seasons_Trees.png-8b683dcdcb2fe96c35fba5da6976aa46.ctex"
+uid="uid://bdtx8j6mu7oy0"
+path="res://.godot/imported/fences.png-68afc444abaa1690467fb302e36c608f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/16x16 TopDown Nature/4_Seasons_Trees.png"
-dest_files=["res://.godot/imported/4_Seasons_Trees.png-8b683dcdcb2fe96c35fba5da6976aa46.ctex"]
+source_file="res://assets/fences.png"
+dest_files=["res://.godot/imported/fences.png-68afc444abaa1690467fb302e36c608f.ctex"]
 
 [params]
 
