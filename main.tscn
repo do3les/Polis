@@ -494,6 +494,7 @@ sources/3 = SubResource("TileSetAtlasSource_80pqv")
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
 tile_set = SubResource("TileSet_c6j7d")
 format = 2
 
