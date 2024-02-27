@@ -61,7 +61,6 @@ texture = ExtResource("1_4eru8")
 12:3/0 = 0
 15:3/0 = 0
 0:4/0 = 0
-1:4/0 = 0
 2:4/0 = 0
 3:4/0 = 0
 4:4/0 = 0
@@ -197,6 +196,7 @@ texture = ExtResource("1_4eru8")
 5:11/size_in_atlas = Vector2i(1, 2)
 5:11/0 = 0
 5:11/0/texture_origin = Vector2i(0, 8)
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4irvk"]
 texture = ExtResource("2_krwbi")
@@ -489,10 +489,10 @@ texture = ExtResource("4_ql0oc")
 0:9/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_c6j7d"]
-sources/0 = SubResource("TileSetAtlasSource_mr3cw")
 sources/1 = SubResource("TileSetAtlasSource_4irvk")
 sources/2 = SubResource("TileSetAtlasSource_502at")
 sources/3 = SubResource("TileSetAtlasSource_80pqv")
+sources/0 = SubResource("TileSetAtlasSource_mr3cw")
 
 [node name="Node2D" type="Node2D"]
 
