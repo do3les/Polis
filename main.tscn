@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://dk4jru5uvxdt2"]
 
 [ext_resource type="Texture2D" uid="uid://cbghab4o2pnxe" path="res://assets/buildings.png" id="1_4eru8"]
-[ext_resource type="Script" path="res://main_cam.gd" id="2_2c0gh"]
 [ext_resource type="Texture2D" uid="uid://bdtx8j6mu7oy0" path="res://assets/fences.png" id="2_krwbi"]
 [ext_resource type="Texture2D" uid="uid://cc0wj7bp7pqkb" path="res://assets/street.png" id="3_vli71"]
 [ext_resource type="Texture2D" uid="uid://l815uxrqqbnu" path="res://assets/vehicles.png" id="4_ql0oc"]
+[ext_resource type="Script" path="res://scripts/main_cam.gd" id="5_6dk18"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mr3cw"]
 texture = ExtResource("1_4eru8")
@@ -196,6 +196,7 @@ texture = ExtResource("1_4eru8")
 5:11/size_in_atlas = Vector2i(1, 2)
 5:11/0 = 0
 5:11/0/texture_origin = Vector2i(0, 8)
+1:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4irvk"]
 texture = ExtResource("2_krwbi")
@@ -508,4 +509,4 @@ layer_2/z_index = 2
 layer_2/tile_data = PackedInt32Array()
 
 [node name="Camera2D" type="Camera2D" parent="."]
-script = ExtResource("2_2c0gh")
+script = ExtResource("5_6dk18")
