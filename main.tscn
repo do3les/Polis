@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://dk4jru5uvxdt2"]
+[gd_scene load_steps=14 format=3 uid="uid://dk4jru5uvxdt2"]
 
 [ext_resource type="Texture2D" uid="uid://cbghab4o2pnxe" path="res://assets/buildings.png" id="1_4eru8"]
-[ext_resource type="Script" path="res://main_cam.gd" id="2_2c0gh"]
+[ext_resource type="Script" path="res://scripts/controller.gd" id="1_5ida5"]
 [ext_resource type="Texture2D" uid="uid://bdtx8j6mu7oy0" path="res://assets/fences.png" id="2_krwbi"]
 [ext_resource type="Texture2D" uid="uid://cc0wj7bp7pqkb" path="res://assets/street.png" id="3_vli71"]
 [ext_resource type="Texture2D" uid="uid://l815uxrqqbnu" path="res://assets/vehicles.png" id="4_ql0oc"]
+[ext_resource type="Script" path="res://scripts/main_cam.gd" id="5_6dk18"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_py10f"]
 tile_data = PackedInt32Array(0, 0, 2, 65536, 0, 2, 131072, 0, 2, 196608, 0, 2, 262144, 0, 2, 327680, 0, 3, 1, 65536, 0, 65537, 65536, 0, 131073, 65536, 0, 196609, 65536, 0, 262145, 65536, 0, 327681, 65536, 1, 2, 65536, 0, 65538, 65536, 0, 131074, 131072, 11, 196610, 65536, 0, 327682, 0, 11, 3, 65536, 0, 65539, 65536, 0, 131075, 65536, 0, 196611, 65536, 0, 262147, 65536, 0, 327683, 65536, 1, 4, 196608, 2, 65540, 196608, 2, 131076, 196608, 2, 196612, 196608, 2, 262148, 196608, 2, 327684, 196608, 3)
@@ -502,7 +503,10 @@ sources/0 = SubResource("TileSetAtlasSource_mr3cw")
 pattern_0 = SubResource("TileMapPattern_py10f")
 pattern_1 = SubResource("TileMapPattern_tomdo")
 
-[node name="Node2D" type="Node2D"]
+[node name="Controller" type="Node2D"]
+script = ExtResource("1_5ida5")
+
+[node name="Citizens" type="Node2D" parent="."]
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -517,4 +521,4 @@ layer_2/z_index = 2
 layer_2/tile_data = PackedInt32Array()
 
 [node name="Camera2D" type="Camera2D" parent="."]
-script = ExtResource("2_2c0gh")
+script = ExtResource("5_6dk18")
