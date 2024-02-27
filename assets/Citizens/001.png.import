@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmu333ry61lxd"
-path="res://.godot/imported/001.png-cca890354bcee7b55df409fc485463f0.ctex"
+path="res://.godot/imported/001.png-daa9060e14b059cefbae3381263ee0a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Citizens/001.png"
-dest_files=["res://.godot/imported/001.png-cca890354bcee7b55df409fc485463f0.ctex"]
+source_file="res://assets/citizens/001.png"
+dest_files=["res://.godot/imported/001.png-daa9060e14b059cefbae3381263ee0a0.ctex"]
 
 [params]
 
