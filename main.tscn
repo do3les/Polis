@@ -525,5 +525,9 @@ layer_2/tile_data = PackedInt32Array()
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("5_6dk18")
 
+[node name="Building2" type="Node2D" parent="."]
+position = Vector2(-15, -5)
+script = ExtResource("7_m52cl")
+
 [node name="Building" type="Node2D" parent="."]
 script = ExtResource("7_m52cl")
