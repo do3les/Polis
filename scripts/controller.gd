@@ -18,7 +18,7 @@ var month = 0
 var year = 0
 
 func time_passing(speed):
-	while speed < 0:
+	while speed > 0:
 		await get_tree().create_timer(20/speed).timeout
 		print("hi")
 		minute += 10
